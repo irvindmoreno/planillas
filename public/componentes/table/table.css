@@ -1,0 +1,221 @@
+.Contenedor {
+  border: 1px solid borderTable;
+  background-color: #f9fafc;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.Tabla {
+  margin-top: 1em;
+  position: relative;
+}
+.Tabla-Descripcion {
+  height: 0.5em;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  font-size: 1.4em;
+  background-color: #e4f0f4;
+  border-bottom: 1px solid borderTable;
+  position: relative;
+}
+.Tabla-Descripcion span:first-child {
+  font-family: 'Open Sans', sans-serif;
+  color: #1a2452;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.Tabla-Descripcion span:last-child {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #3a3e5d;
+  font-size: 0.7em;
+}
+.Tabla-Descripcion div {
+  position: absolute;
+  background-color: #48b048;
+  color: #fff;
+  left: 14em;
+  top: 1.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 0.6em;
+  border-radius: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  transition: all 0.5s ease;
+}
+.Tabla-Descripcion div i {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.Tabla-Descripcion div:hover {
+  background-color: #378621;
+  cursor: pointer;
+}
+.Tabla-EditDesplegable {
+  height: 19.7em;
+  cursor: -webkit-grab;
+  display: none;
+  background-color: #f00;
+  position: absolute;
+  width: 30em;
+  top: -12.5em;
+  right: 0.89em;
+  background-color: #fcf8e3;
+  border: 1px solid #d6d6d7;
+}
+.Tabla-EditDesplegable-Title {
+  background-color: #f5bc4d;
+  color: #7d5c1d;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+.Tabla-EditDesplegable-Title span:first-child {
+  font-weight: bold;
+  color: #aa5c04;
+}
+.Tabla-EditDesplegable-Body {
+  padding-left: 5%;
+  padding-top: 1em;
+}
+.Tabla-EditDesplegable-Body-Form {
+  overflow-y: scroll;
+  height: 13em;
+}
+.Tabla-EditDesplegable-Body-Botones span {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 0.2em;
+  color: #fff;
+  background-color: #f00;
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.Tabla-EditDesplegable-Body-Botones span:last-child {
+  background-color: #ee8a7f;
+  border: 1px solid #cc4d4d;
+}
+.Tabla-EditDesplegable-Body-Botones span:last-child:hover {
+  background-color: #e74c3c;
+}
+.Tabla-EditDesplegable-Body-Botones span:first-child {
+  background-color: #aed281;
+  border: 1px solid #578022;
+}
+.Tabla-EditDesplegable-Body-Botones span:first-child:hover {
+  background-color: #7db831;
+}
+.Tabla-EditDesplegable-Body i {
+  background-color: #d9d8c9;
+  color: #da5e20;
+  padding-left: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  margin-bottom: 0.5em;
+  margin-right: -0.25em;
+  height: 1.12em;
+  border: 1px solid #cec7c7;
+}
+.Tabla-EditDesplegable-Body input {
+  height: 2em;
+  width: 84%;
+  padding-left: 1em;
+}
+.Tabla-BotonosPaginacion {
+  display: flex;
+}
+.Tabla-BotonosPaginacion span:first-child,
+.Tabla-BotonosPaginacion span:last-child {
+  width: 2em;
+  height: 2em;
+  background-color: #cbe4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a2452;
+}
+.Tabla-CokachoBuscador {
+  position: absolute;
+  right: 1em;
+  width: 15em;
+}
+.Tr-Editable {
+  background-color: #fcf8e3 !important;
+}
+.Input-Editando {
+  background-color: #fcf8e3;
+}
+.Tabla-Cokacho1 {
+  height: 20em !important;
+  display: block;
+  overflow-y: scroll;
+}
+.Tabla-Cokacho1 thead {
+  border-bottom: 5px solid #808080;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.Tabla-Cokacho1 thead th {
+  width: 5%;
+  color: #394263;
+  font-size: 1em;
+  height: 2.3em;
+  border-bottom: 1px solid #eaedf1;
+}
+.Tabla-Cokacho1 tbody {
+  height: inherit;
+}
+.Tabla-Cokacho1 tbody tr:nth-child(even) {
+  background: #f0feff;
+}
+.Tabla-Cokacho1 tbody tr:nth-child(odd) {
+  background: #fff;
+}
+.Tabla-Cokacho1 tbody td {
+  width: 5%;
+  color: #676363;
+  height: 2.3em;
+  text-align: center;
+  padding-top: 0.5em;
+  border-bottom: 1px solid borderTable;
+}
+.Tabla-Cokacho1 tbody td .ImgCircular {
+  border-radius: 50%;
+  height: 4em;
+}
+.Tabla-Cokacho1 tbody td:last-child div {
+  display: inline-block;
+  margin-left: -5px;
+}
+.Tabla-Cokacho1 tbody .Tabla-BotonEditar {
+  border: 1px solid #d9dde3;
+  background-color: #f3efef;
+  width: 1.3em;
+  border-radius: 0.2em;
+  color: #394263;
+  transition: all 0.2s ease;
+}
+.Tabla-Cokacho1 tbody .Tabla-BotonEditar:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #fffdfd;
+}
+.Tabla-Cokacho1 tbody .Tabla-BotonEliminar {
+  background-color: #ef8a80;
+  color: #fff;
+  width: 1.3em;
+  border: 1px solid #e74c3c;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+.Tabla-Cokacho1 tbody .Tabla-BotonEliminar:hover {
+  cursor: pointer;
+  background-color: #ee5848;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html ng-app="planillas">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet" type="text/css">
+    <link href="./styl.css" rel="stylesheet" type="text/css">
+    <link href="../../../node_modules/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="../../../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../componentes/table/table.js"></script>
+    <script src="./inicio.js"></script>
+  </head>
+  <body>
+    <div class="Layout">
+      <aside class="Aside-A">
+        <div class="Panel-Logo"> <span class="bold">Clicks </span><span> &nbsp and Bricks</span></div>
+        <div class="Panel-LogoPanel">
+          <div class="Logo-Circular"><img src="../../img/cyblogo.png"></div>
+          <div class="Panel-LogoIzquierda">
+            <div>Daniel Moreno</div>
+            <div> <span>13 de oct 2015</span></div>
+          </div>
+        </div>
+        <div class="Panel-Logo-Claro"></div>
+        <nav class="Menu-Principal">
+          <ul>
+            <li> <i class="fa fa-caret-square-o-right"> </i><span>Dashboard</span></li>
+            <li> <i class="fa fa-bell"> </i><span>Dashboard 2</span></li>
+            <li> <i class="fa fa-calculator"> </i><span>Frontend Templates</span></li>
+            <li> <i class="fa fa-calendar"> </i><span>Email Templates</span></li>
+            <li> <i class="fa fa-cart-plus"> </i><span>eCommerce</span></li>
+          </ul>
+        </nav>
+        <div class="Menu-ConTitulo"><span>WIDGET KIT</span>
+          <ul>
+            <li> <i class="fa fa-caret-square-o-right"> </i><span>Dashboard</span></li>
+            <li> <i class="fa fa-bell"> </i><span>Dashboard 2</span></li>
+            <li> <i class="fa fa-calculator"> </i><span>Frontend Templates</span></li>
+            <li> <i class="fa fa-calendar"> </i><span>Email Templates</span></li>
+            <li> <i class="fa fa-cart-plus"> </i><span>eCommerce</span></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="Layout-Header">
+        <header> <i class="fa fa-align-justify"></i></header>
+        <div class="Inicio">
+          <div class="Inicio-Banner">
+            <div class="Inicio-Banner-Tansparente">
+              <div class="Inicio-Banner-Texto1">
+                <h3>Bienvenido al &nbsp<span>Sistema</span></h3>
+              </div>
+              <div class="Inicio-Banner-Texto2"><span>De Planillas CLicks and Bricks</span></div>
+              <div class="Inicio-Banner-Iconos">
+                <div><i class="fa fa-calendar-minus-o"> 
+                    <div>Eventos</div></i><i class="fa fa-calendar-minus-o"> 
+                    <div>Eventos</div></i><i class="fa fa-calendar-minus-o"> 
+                    <div>Eventos</div></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="breadCrumbs"> <span>tables </span><span class="breadCrumbs-Separador">&nbsp / </span><span class="breadCrumbs-Selected">&nbsp General</span></div>
+        <div class="Contenedor Tabla">
+          <div class="Tabla-Descripcion"><span>Tabla</span>
+            <div>Nuevo<i class="fa fa-plus-square"></i></div>
+            <input type="text" class="Tabla-CokachoBuscador"><span>Trabajadores</span>
+          </div>
+          <div class="draggable Tabla-EditDesplegable">
+            <div class="Tabla-EditDesplegable-Title"> <span>Trabajador:</span><span>&nbsp Amelia Yesenia</span></div>
+            <div class="Tabla-EditDesplegable-Body">
+              <div class="Tabla-EditDesplegable-Body-Form">
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Nombres">
+                </div>
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Apellidos">
+                </div>
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Emai">
+                </div>
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Teléfono">
+                </div>
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Fecha de Nacimiento">
+                </div>
+                <div><i class="fa fa-user"></i>
+                  <input placeholder="Cuenta Bancaria">
+                </div>
+              </div>
+              <div class="Tabla-EditDesplegable-Body-Botones"><span class="Tabla-Guardar">Guardar</span><span class="Tabla-Cancelar">Cancelar</span></div>
+            </div>
+          </div>
+          <table class="Tabla-Cokacho1">
+            <thead>
+              <tr>
+                <th> 
+                  <input type="checkbox">
+                </th>
+                <th> <i class="fa fa-users"></i></th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Amelia Yesenia</td>
+                <td>cleo@hotmail.com</td>
+                <td>0</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Lizeth Reyes</td>
+                <td>cleo@hotmail.com</td>
+                <td>1</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Rut Vázques</td>
+                <td>cleo@hotmail.com</td>
+                <td>2</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Ariadne Dana</td>
+                <td>cleo@hotmail.com</td>
+                <td>3</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Dana Ariadne</td>
+                <td>cleo@hotmail.com</td>
+                <td>4</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+              <tr class="elementoABuscar">
+                <td> 
+                  <input type="checkbox">
+                </td>
+                <td> <img src="../../img/persona.jpg" class="ImgCircular"></td>
+                <td>Teofila Cubillas</td>
+                <td>cleo@hotmail.com</td>
+                <td>5</td>
+                <td> 
+                  <div title="Editar" class="Tabla-BotonEditar"> <i class="fa fa-pencil"></i></div>
+                  <div title="Eliminar" class="Tabla-BotonEliminar"><i class="fa fa-times"></i></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

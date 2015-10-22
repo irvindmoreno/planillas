@@ -1,0 +1,11 @@
+extends ../layout/layout.jade
+block head	
+	script(src="../../../bower_components/webcomponentsjs/webcomponents.min.js")
+	script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")
+	script(src="./polymer.js")
+	link(rel="import" href="../../componentes/pestania/pestania-a.html")
+block aside
+	img(src="../../img/HOME.jpg")
+	div(ng-controller="InicioController as dato")
+		div {{dato.nombre}} Moreno
+		pestania-a(valor="jeje" iteraciones='{{dato.numero}}')		

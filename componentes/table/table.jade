@@ -1,0 +1,48 @@
+div(class="Contenedor Tabla")
+		div(class="Tabla-Descripcion")
+			span Tabla
+			div Nuevo
+				i(class="fa fa-plus-square")
+			input(type="text" class="Tabla-CokachoBuscador")
+			span Trabajadores
+		div(class="draggable Tabla-EditDesplegable")
+			div(class="Tabla-EditDesplegable-Title") 
+				span Trabajador:
+				span &nbsp Amelia Yesenia
+			div(class="Tabla-EditDesplegable-Body")
+				div(class="Tabla-EditDesplegable-Body-Form")
+					- labels=["Nombres","Apellidos","Emai","Teléfono","Fecha de Nacimiento","Cuenta Bancaria"]
+					each label in labels
+						div
+							i(class="fa fa-user")
+							input(placeholder=label)
+				div(class="Tabla-EditDesplegable-Body-Botones")
+					span(class="Tabla-Guardar") Guardar
+					span(class="Tabla-Cancelar") Cancelar
+		table(class="Tabla-Cokacho1")
+			thead
+				tr
+					th 
+						input(type="checkbox")
+					th 
+						i(class="fa fa-users")
+					th Nombre
+					th Email
+					th Telefono
+					th Acciones
+			tbody
+				- elementos=["Amelia Yesenia","Lizeth Reyes","Rut Vázques","Ariadne Dana","Dana Ariadne","Teofila Cubillas"]
+				each elemento,index in elementos
+					tr(class="elementoABuscar")
+						td 
+							input(type="checkbox")
+						td 
+							img( class ="ImgCircular" src="../../img/persona.jpg")
+						td=elemento
+						td cleo@hotmail.com
+						td=index
+						td 
+							div(class="Tabla-BotonEditar" title="Editar") 
+								i(class="fa fa-pencil")
+							div(class="Tabla-BotonEliminar" title="Eliminar")
+								i(class="fa fa-times")

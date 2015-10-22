@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.Aside-A {
+  background-color: #4c5572;
+  width: 28%;
+  max-width: 210px;
+  color: #fff;
+  height: inherit;
+}
+.Panel-Logo {
+  background-color: #313854;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Panel-Logo:hover {
+  background-color: #1bbae1;
+  cursor: pointer;
+}
+.Panel-Logo span:first-child {
+  font-weight: bold;
+}
+.Panel-Logo span:last-child {
+  font-weight: normal;
+  font-style: italic;
+}
+.Logo-Circular {
+  background-color: #f9f2f2;
+  border-radius: 50%;
+  border: 2px solid #808080;
+  width: 4.4em;
+  height: 4.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo-Circular img {
+  height: 3.7em;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+.Logo-Circular img:hover {
+  -webkit-transform: rotate(360deg);
+}
+.Panel-LogoPanel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6em;
+}
+.Panel-LogoIzquierda {
+  color: #fff;
+  font-size: 0.9em;
+}
+.Panel-LogoIzquierda div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.Panel-LogoIzquierda span {
+  font-size: 0.8em;
+  color: #958fa3;
+  font-style: italic;
+}
+.Panel-Logo-Claro {
+  background-color: #394263;
+  height: 4em;
+  transition: all 0.5s ease;
+}
+.Panel-Logo-Claro:hover {
+  background-color: #313854;
+}

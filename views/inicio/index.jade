@@ -1,0 +1,23 @@
+extends ../layout/layout.jade
+block head
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css')
+	link(href="./styl.css" rel="stylesheet" type="text/css")
+	link(href="../../../node_modules/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css")
+	script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+	script(src="http://code.jquery.com/ui/1.11.4/jquery-ui.js")
+	script(src="../../../node_modules/sweetalert/dist/sweetalert.min.js")
+	script(src="../../componentes/table/table.js")
+	script(src="./inicio.js")
+block aside	
+	include ../../componentes/aside/aside.jade
+block header
+	include ../../componentes/header/header.jade
+block slide
+	include ../../componentes/slide/slide.jade
+block breadCrumbs
+	include ../../componentes/breadCrumbs/breadCrumbs.jade
+block table	
+	include ../../componentes/table/table.jade

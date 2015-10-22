@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="planillas">
+  <head>
+    <script src="../../../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="./polymer.js"></script>
+    <link rel="import" href="../../componentes/pestania/pestania-a.html">
+  </head>
+  <body>
+    <div class="Layout"><img src="../../img/HOME.jpg">
+      <div ng-controller="InicioController as dato">
+        <div>{{dato.nombre}} Moreno</div>
+        <pestania-a valor="jeje" iteraciones="{{dato.numero}}">		</pestania-a>
+      </div>
+      <div class="Layout-Header">
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+link(rel="import" href="../../../bower_components/polymer/polymer.html")
+link(href="./pestania-a.css" rel="stylesheet" type="text/css")
+dom-module(id="pestania-a")
+	template
+		template(is="dom-repeat" as="item" items="{{iteraciones}}")
+			div(class="letra") {{item.nombre}}
+script.
+	Polymer({
+			is:'pestania-a',
+			properties:{
+				valor:{
+					type: String,
+					value: "World"
+				},
+				iteraciones: {
+			      type: Array,
+			      notify: true,
+			      value: function() {return [];}
+			    }				
+
+			}
+		});

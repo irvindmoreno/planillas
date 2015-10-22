@@ -1,0 +1,67 @@
+moradoClaro=#4c5572
+celesteHover=#1bbae1
+moradoOscuroHover=#313854
+moradoOscuro=#313854
+grisBlanco=#F9F2F2
+gray=gray
+body
+	margin 0
+	font-size 16px	
+	font-family: 'Open Sans', sans-serif;
+.Aside-A
+	background-color moradoClaro
+	width 28%
+	max-width 210px
+	color white
+	height inherit
+.Panel-Logo
+	background-color moradoOscuro
+	height 3em
+	display flex
+	justify-content center
+	align-items center
+	&:hover
+		background-color celesteHover
+		cursor pointer
+	& span:first-child
+		font-weight bold
+	& span:last-child
+		font-weight normal
+		font-style italic
+.Logo-Circular
+	background-color grisBlanco;
+	border-radius 50%;
+	border 2px solid gray
+	width 4.4em
+	height 4.4em
+	display flex
+	justify-content center
+	align-items center
+	& img
+		height 3.7em
+		cursor pointer
+		transition all 2s ease
+		&:hover
+			-webkit-transform: rotate(360deg);
+.Panel-LogoPanel
+	display flex
+	justify-content space-around
+	align-items center
+	//background-color #D94949
+	height 6em
+.Panel-LogoIzquierda
+	color #fff
+	font-size 0.9em
+	& div:last-child
+		display flex
+		justify-content center		
+	& span
+		font-size 0.8em
+		color #958FA3
+		font-style italic
+.Panel-Logo-Claro
+	background-color #394263
+	height 4em
+	transition all 0.5s ease
+	&:hover
+		background-color moradoOscuroHover

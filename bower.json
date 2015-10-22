@@ -1,0 +1,22 @@
+{
+  "name": "view",
+  "version": "0.0.0",
+  "authors": [
+    "Samuel Marquéz <samuel_1710@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "1.0.0"
+  }
+}

@@ -1,0 +1,61 @@
+.Inicio {
+  width: inherit;
+  margin-top: -0.4em;
+}
+.Inicio-Banner {
+  background-image: url("../../img/bannerBg2.jpg");
+  height: 15em;
+  background-size: 52em;
+  background-position-x: 1em;
+  background-position-y: -0.5em;
+}
+.Inicio-Banner-Tansparente {
+  background-color: rgba(0,0,0,0.7);
+  height: 7.5em;
+  color: #fff;
+  position: relative;
+}
+.Inicio-Banner-Texto1 h3 {
+  margin: 0;
+  padding-top: 0.2em;
+  font-size: 2em;
+  padding-left: 2em;
+  font-style: italic;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  font-size: 2em;
+}
+.Inicio-Banner-Texto1 span {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: lighter;
+  color: #fff;
+}
+.Inicio-Banner-Texto2 {
+  padding-left: 14em;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.Inicio-Banner-Iconos {
+  position: absolute;
+  top: 2em;
+  right: 3em;
+}
+.Inicio-Banner-Iconos i {
+  font-size: 2em;
+  text-align: center;
+  margin-left: 0.5em;
+  transition: all 0.2s ease;
+}
+.Inicio-Banner-Iconos i div {
+  margin-top: 0.5em;
+  font-size: 0.5em;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.Inicio-Banner-Iconos i:hover {
+  cursor: pointer;
+  font-size: 2.4em;
+  color: #7eb386;
+}
